@@ -50,6 +50,7 @@
                         </div>
                     </div>
                 </x-card>
+                @auth
                 <x-card class="mt-4 p-2 flex space-x-6">
                     <a href="/jobs/{{$job->id}}/edit">
                         <i class="fa-solid fa-pencil"></i> Edit
@@ -64,5 +65,6 @@
                         </Button>
                     </form>
                 </x-card>
+                @endauth
             </div>
 @endsection
